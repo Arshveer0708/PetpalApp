@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable/background.xml" value="0.2203125" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable/background_selected.xml" value="0.2203125" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable/grid_item_selector.xml" value="0.2203125" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable/item_selector.xml" value="0.1125" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_add_pet_details.xml" value="0.22" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_grid_recycler_view_acivity.xml" value="0.20416666666666666" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/item_grid_pet.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

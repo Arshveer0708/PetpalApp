@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Petpal</string>
+    <string name="add_pet_details">Add Pet Details</string>
+    <string-array name="categories">
+        <item>Choose Pet category</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Bird</item>
+        <item>Horse</item>
+        <item>Other</item>
+    </string-array>
 </resources>
