@@ -16,3 +16,7 @@ Technologies to be implemented ->
 - Firebase for authentication and database controls
 - Framer website (https://framer.com/projects/pra2HkOVh0Z2mMa6kWbi-ail4W?node=SeOBazzkX-page) for creating the wireframe or mockup for the application.
 
+Wireframe - 
+
+
+![wireframe](https://user-images.githubusercontent.com/64243859/141724637-6ecbb3ee-7b6e-4076-b7e5-eb7333666879.png)
