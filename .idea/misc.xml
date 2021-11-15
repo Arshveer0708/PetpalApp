@@ -3,14 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable/background.xml" value="0.2203125" />
         <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable/background_selected.xml" value="0.2203125" />
         <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable/grid_item_selector.xml" value="0.2203125" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2046875" />
         <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable/item_selector.xml" value="0.1125" />
-        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_add_pet_details.xml" value="0.22" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable/petImage.xml" value="0.2203125" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/drawable/sms.xml" value="0.2046875" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_add_pet_details.xml" value="0.25" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_grid_recycler.xml" value="0.25" />
         <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_grid_recycler_view_acivity.xml" value="0.20416666666666666" />
         <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/item_grid_pet.xml" value="0.33" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_pet_information.xml" value="0.25" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_pet_list.xml" value="0.25" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_recycler_list.xml" value="0.33" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_sigin.xml" value="0.15217391304347827" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_signin.xml" value="0.1" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/activity_smsactivity.xml" value="0.25" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/fragment_first.xml" value="0.25" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/item_grid_pet.xml" value="0.67" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/item_layout_pet.xml" value="0.18854166666666666" />
+        <entry key="..\:/5th Semester/Mobile Computing - Petpal App/app/src/main/res/layout/item_pet.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

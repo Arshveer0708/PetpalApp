@@ -1,6 +1,7 @@
 package com.example.petpal
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -16,6 +17,9 @@ class AddPetDetailsActivity : AppCompatActivity() {
         binding = ActivityAddPetDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.backFloatingActionButton.setOnClickListener {
+            startActivity(Intent(this, GridRecyclerActivity::class.java))
+        }
         binding.button.setOnClickListener {
             if (binding.editTextPetName.text.toString()
                     .isNotEmpty() && binding.editTextPetBreed.text.toString()
@@ -25,7 +29,7 @@ class AddPetDetailsActivity : AppCompatActivity() {
                     .isNotEmpty() && binding.editContactNumber.text.toString().isNotEmpty() &&
                 binding.spinnerCategory.selectedItemPosition > 0
             ) {
-                //create an instance of the restaurant
+                //create an instance of the pet
                 val pet = PetDetails()
                 pet.petName = binding.editTextPetName.text.toString()
                 pet.petBreed = binding.editTextPetBreed.text.toString()
@@ -40,9 +44,8 @@ class AddPetDetailsActivity : AppCompatActivity() {
                 //1.  get an ID from Firestore
                 val db = FirebaseFirestore.getInstance().collection("pets")
                 pet.id = db.document().id
-//                Log.i("DB_Response","${restaurant.id}")
 
-                //2. store the restaurant as a document
+                //2. store the pet as a document
                 db.document(pet.id!!).set(pet)
                     .addOnSuccessListener {
                         Toast.makeText(this, "New Pet Added", Toast.LENGTH_LONG).show()
@@ -53,23 +56,21 @@ class AddPetDetailsActivity : AppCompatActivity() {
                         binding.editContactNumber.setText("")
                         binding.editPetQualities.setText("")
                         binding.spinnerCategory.setSelection(0)
-//                        startActivity(Intent(this, GridRecyclerActivity::class.java))
+                        startActivity(Intent(this, GridRecyclerActivity::class.java))
                     }
-                    .addOnFailureListener { exception ->
-                        Toast.makeText(this, "DB Error", Toast.LENGTH_LONG).show()
-//                        var message = exception.localizedMessage
-//                        message?.let {
-//                            Log.i("DB Message", message)
-//                        }
-
-                    }
+//                    .addOnFailureListener { exception ->
+//                        Toast.makeText(this, "DB Error", Toast.LENGTH_LONG).show()
+////                        var message = exception.localizedMessage
+////                        message?.let {
+////                            Log.i("DB Message", message)
+////                        }
+//
+//                    }
             } else {
-                Toast.makeText(this, "Restaurant name and rating required", Toast.LENGTH_LONG)
+                Toast.makeText(this, "Pet information is required", Toast.LENGTH_LONG)
                     .show()
             }
         }
-
-//        setSupportActionBar(binding.mainToolBar.toolbar)
     }
 
 }
