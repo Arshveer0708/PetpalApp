@@ -1,4 +1,4 @@
-package com.example.petpal
+package com.GC200451204.petpal
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,10 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.petpal.R
 
 class GridAdapter (val context : Context,
                    val pets : List<PetDetails>,
-                   val itemListener: PetItemListener)   : RecyclerView.Adapter<GridAdapter.PetViewHolder>() {
+                   val itemListener: PetItemListener
+)   : RecyclerView.Adapter<GridAdapter.PetViewHolder>() {
 
     /**
      * This class is used to allow us to access the item_pet.xml objects

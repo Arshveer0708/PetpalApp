@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Petpal">
         <activity
-            android:name=".SmsActivity"
+            android:name="com.GC200451204.petpal.SmsActivity"
             android:exported="true" />
         <activity
-            android:name=".SiginActivity"
+            android:name="com.GC200451204.petpal.SiginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,22 +22,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PetInformationActivity"
+            android:name="com.GC200451204.petpal.PetInformationActivity"
             android:exported="true" />
         <activity
-            android:name=".GridRecyclerActivity"
+            android:name="com.GC200451204.petpal.GridRecyclerActivity"
+            android:exported="true" />
+<!--        <activity-->
+<!--            android:name=".RecyclerListActivity"-->
+<!--            android:exported="true" />-->
+        <activity
+            android:name="com.GC200451204.petpal.PetListActivity"
             android:exported="true" />
         <activity
-            android:name=".RecyclerListActivity"
+            android:name="com.GC200451204.petpal.AddPetDetailsActivity"
             android:exported="true" />
         <activity
-            android:name=".PetListActivity"
-            android:exported="true" />
-        <activity
-            android:name=".AddPetDetailsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name="com.GC200451204.petpal.MainActivity"
             android:exported="true" />
     </application>
 

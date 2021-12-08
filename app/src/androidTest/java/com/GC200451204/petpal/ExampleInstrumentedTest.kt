@@ -1,4 +1,4 @@
-package com.example.petpal
+package com.GC200451204.petpal
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

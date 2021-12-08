@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PetListActivity">
+    tools:context="com.GC200451204.petpal.PetListActivity">
 
     <TextView
         android:id="@+id/headingTextView"

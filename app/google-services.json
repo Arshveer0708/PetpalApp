@@ -7,12 +7,57 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:831077896352:android:44ca0bab6e023ed98239c5",
+        "android_client_info": {
+          "package_name": "com.GC200451204.petpal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831077896352-54smgpatf9u3mt3c1qjb8petivd05sg1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.GC200451204.petpal",
+            "certificate_hash": "bc2cb6804543757b90d835305a82aabde05cb169"
+          }
+        },
+        {
+          "client_id": "831077896352-7fiabqu73o6sjea2lvnohp5bbp23s9if.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4JiP3_fOSVNvG4oJCc7leTVnRD8wwFGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831077896352-7fiabqu73o6sjea2lvnohp5bbp23s9if.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:831077896352:android:96aabfee74af957a8239c5",
         "android_client_info": {
           "package_name": "com.example.petpal"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "831077896352-hh48jv8rofnppjor4jtfhl4q0gu8be11.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petpal",
+            "certificate_hash": "bc2cb6804543757b90d835305a82aabde05cb169"
+          }
+        },
         {
           "client_id": "831077896352-7fiabqu73o6sjea2lvnohp5bbp23s9if.apps.googleusercontent.com",
           "client_type": 3

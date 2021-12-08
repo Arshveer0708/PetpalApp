@@ -1,4 +1,4 @@
-package com.example.petpal
+package com.GC200451204.petpal
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

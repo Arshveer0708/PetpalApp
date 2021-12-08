@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SiginActivity">
+    tools:context="com.GC200451204.petpal.SiginActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
