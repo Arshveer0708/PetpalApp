@@ -7,6 +7,16 @@
     android:layout_margin="@dimen/main_margin"
     tools:context="com.GC200451204.petpal.AddPetDetailsActivity">
 
+    <include
+        android:id="@+id/mainToolBar"
+        layout="@layout/layout_petpal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="226dp"
@@ -16,7 +26,7 @@
         android:textSize="@dimen/heading_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/mainToolBar" />
 
     <Spinner
         android:id="@+id/spinnerCategory"

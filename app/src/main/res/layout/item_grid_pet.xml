@@ -13,12 +13,14 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#201F1F"
         android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textAge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/textAge"
         tools:text="Tommy" />
 
     <ImageView
@@ -38,7 +40,9 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="6dp"
         android:text="4 Months"
+        android:textColor="#E80101"
         android:textSize="13sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -48,8 +52,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginTop="6dp"
-        android:textSize="13sp"
         android:text="Dog"
+        android:textColor="#F80C0C"
+        android:textSize="13sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textAge" />
 
@@ -59,8 +65,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginTop="5dp"
-        android:textSize="10sp"
         android:text="185 Cardinal Street, Barrie"
+        android:textColor="#ED0909"
+        android:textSize="10sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textCategory" />
 

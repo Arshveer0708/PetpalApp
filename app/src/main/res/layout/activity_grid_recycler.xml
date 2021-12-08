@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".RecyclerListActivity">
 
+    <include
+        android:id="@+id/mainToolBar"
+        layout="@layout/layout_petpal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 
     <TextView
@@ -16,7 +25,7 @@
         android:textSize="@dimen/heading_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/mainToolBar" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/gridRecyclerView"
@@ -29,13 +38,4 @@
         app:spanCount="1"
         android:layout_margin="@dimen/main_margin"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="14dp"
-        android:clickable="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/add_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

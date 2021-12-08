@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Petpal">
         <activity
+            android:name="com.GC200451204.petpal.UserProfileActivity"
+            android:exported="true" />
+        <activity
             android:name="com.GC200451204.petpal.SmsActivity"
             android:exported="true" />
         <activity
@@ -27,9 +30,9 @@
         <activity
             android:name="com.GC200451204.petpal.GridRecyclerActivity"
             android:exported="true" />
-<!--        <activity-->
-<!--            android:name=".RecyclerListActivity"-->
-<!--            android:exported="true" />-->
+        <activity
+            android:name=".RecyclerListActivity"
+            android:exported="true" />
         <activity
             android:name="com.GC200451204.petpal.PetListActivity"
             android:exported="true" />

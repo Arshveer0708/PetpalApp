@@ -4,8 +4,11 @@ package com.GC200451204.petpal
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 
 import android.widget.Toast
+import com.example.petpal.R
 import com.example.petpal.databinding.ActivityAddPetDetailsBinding
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -71,6 +74,39 @@ class AddPetDetailsActivity : AppCompatActivity() {
                     .show()
             }
         }
+        setSupportActionBar(binding.mainToolBar.toolbar)
     }
+
+    //     Adding the main_menu to the toolbar
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    // This method connects an action with the icon selected from the menu
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId){
+            //When clicked on add button in toolbar
+            R.id.action_add ->{
+                startActivity(Intent(applicationContext, AddPetDetailsActivity::class.java))
+                return true
+            }
+
+            //When clicked on list button
+            R.id.action_list ->{
+                startActivity(Intent(applicationContext, GridRecyclerActivity::class.java))
+                return true
+            }
+
+            //When  clicked on User button
+            R.id.action_user_profile -> {
+                startActivity(Intent(applicationContext, UserProfileActivity::class.java))
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 
 }

@@ -3,7 +3,10 @@ package com.GC200451204.petpal
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.viewModels
+import com.example.petpal.R
 import com.example.petpal.databinding.ActivityGridRecyclerBinding
 
 class GridRecyclerActivity : AppCompatActivity(), GridAdapter.PetItemListener {
@@ -21,9 +24,41 @@ class GridRecyclerActivity : AppCompatActivity(), GridAdapter.PetItemListener {
             binding.gridRecyclerView.adapter = gridAdapter
         })
 
-        binding.addActionButton.setOnClickListener {
-            startActivity(Intent(this, AddPetDetailsActivity::class.java))
+
+        //Add button is not required now.
+//        binding.addActionButton.setOnClickListener {
+//            startActivity(Intent(this, AddPetDetailsActivity::class.java))
+//        }
+
+        setSupportActionBar(binding.mainToolBar.toolbar)
+    }
+
+
+//     Adding the main_menu to the toolbar
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+   // This method connects an action with the icon selected from the menu
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId){
+            //When clicked on add button in toolbar
+            R.id.action_add ->{
+                startActivity(Intent(applicationContext, AddPetDetailsActivity::class.java))
+                return true
+            }
+            R.id.action_list ->{
+                startActivity(Intent(applicationContext, GridRecyclerActivity::class.java))
+                return true
+            }
+            R.id.action_user_profile -> {
+                startActivity(Intent(applicationContext, UserProfileActivity::class.java))
+                return true
+            }
         }
+        return super.onOptionsItemSelected(item)
     }
 
     /**
