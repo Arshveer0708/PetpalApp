@@ -10,6 +10,9 @@
         <item>Other</item>
     </string-array>
     <string name="title_activity_recycler_list">RecyclerListActivity</string>
+    <string name="add_a_new_pet">Add a new pet</string>
+    <string name="view_pet_list">View Pet List</string>
+    <string name="user_profile">User Profile</string>
     <!-- Strings used for fragments for navigation -->
     <!--    <string name="first_fragment_label">First Fragment</string>-->
     <!--    <string name="second_fragment_label">Second Fragment</string>-->
