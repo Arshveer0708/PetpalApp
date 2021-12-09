@@ -16,6 +16,18 @@ Technologies to be implemented ->
 - Firebase for authentication and database controls
 - Framer website (https://framer.com/projects/pra2HkOVh0Z2mMa6kWbi-ail4W?node=SeOBazzkX-page) for creating the wireframe or mockup for the application.
 
+Updation after Assignment 2-
+- Added launcher icon 
+- Completed the design and functionality for app based on the initial plan submitted in Assignment 1
+- Updated the screens
+- Added logo 
+- Updated UserProfileActivity.kt file to add profile page and logout button in user profile page
+- Deployed the app to the Google Play Store
+•	Generated a content rating
+•	Provided screenshots and description to the Play Store
+•	Published your app so it can be downloaded
+
+
 Wireframe - 
 
 
