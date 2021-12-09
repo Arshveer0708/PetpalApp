@@ -15,6 +15,7 @@
         android:layout_marginTop="24dp"
         android:text="Friendly, well trained"
         android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/petAgeTextView" />
 
@@ -26,6 +27,7 @@
         android:layout_marginTop="32dp"
         android:text="185 Cardinal Street, Barrie"
         android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/petQualitiesTextView" />
 
@@ -37,6 +39,7 @@
         android:layout_marginTop="32dp"
         android:text="+1-1223-456-7890"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/petAddressTextView" />
 
@@ -49,6 +52,7 @@
         android:background="@color/teal_200"
         android:text="Age"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -61,6 +65,7 @@
         android:background="@color/teal_200"
         android:text="Qualities"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -73,6 +78,7 @@
         android:background="@color/teal_200"
         android:text="Address"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -85,6 +91,7 @@
         android:background="@color/teal_200"
         android:text="Contact No."
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -97,6 +104,7 @@
         android:background="@color/teal_200"
         android:text="Breed"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -121,7 +129,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/petNameTextView"
-        tools:srcCompat="@color/black" />
+        app:srcCompat="@drawable/animals"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -132,6 +140,7 @@
         android:background="@color/teal_200"
         android:text="Category"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -143,6 +152,7 @@
         android:layout_marginTop="24dp"
         android:text="Dog"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -154,6 +164,7 @@
         android:layout_marginTop="24dp"
         android:text="German Shephard"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/petCategoryTextView" />
 
@@ -165,6 +176,7 @@
         android:layout_marginTop="24dp"
         android:text="1 month"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/petBreedTextView" />
 
