@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Petpal">
         <activity
+            android:name="com.GC200451204.petpal.EnterUserCredentialsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.GC200451204.petpal.StyledSigninActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.GC200451204.petpal.UserProfileActivity"
             android:exported="true" />
         <activity
@@ -18,11 +30,6 @@
         <activity
             android:name="com.GC200451204.petpal.SiginActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.GC200451204.petpal.PetInformationActivity"

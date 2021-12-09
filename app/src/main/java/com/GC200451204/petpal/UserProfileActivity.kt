@@ -77,7 +77,7 @@ class UserProfileActivity : AppCompatActivity() {
     {
         auth.signOut()
         finish()
-        startActivity(Intent(this, SiginActivity::class.java))
+        startActivity(Intent(this, StyledSigninActivity::class.java))
     }
 
 
