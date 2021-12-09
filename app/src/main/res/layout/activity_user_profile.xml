@@ -54,20 +54,41 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewUserName"
         tools:text="aaa@ggdsdsh.com" />
 
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Enter User Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailID" />
+
+    <Button
+        android:id="@+id/buttonAddName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Add User Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/main_margin"
         android:clickable="true"
-        android:focusable="true"
-        android:tint="#B62929"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEmailID"
-        app:layout_constraintVertical_bias="0.155"
-        app:srcCompat="@drawable/logout_icon" />
-
+        android:layout_margin="@dimen/main_margin"
+        app:srcCompat="@drawable/logout_icon"
+        android:focusable="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

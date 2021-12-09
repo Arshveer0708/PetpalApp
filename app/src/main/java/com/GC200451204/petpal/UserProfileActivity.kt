@@ -1,14 +1,19 @@
 package com.GC200451204.petpal
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import com.example.petpal.R
 import com.example.petpal.databinding.ActivityUserProfileBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.UserProfileChangeRequest
+import com.google.firebase.auth.ktx.userProfileChangeRequest
 
 class UserProfileActivity : AppCompatActivity() {
     private lateinit var binding : ActivityUserProfileBinding
@@ -19,16 +24,26 @@ class UserProfileActivity : AppCompatActivity() {
         binding = ActivityUserProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        //enable the scrollbars
-//        binding.termsTextView.movementMethod = ScrollingMovementMethod()
+        //Make the add user name text field and button invisible if the user already exists
+        binding.nameEditText.visibility = View.GONE
+        binding.buttonAddName.visibility = View.GONE
 
         //ensure we have an authenticated user
         if (auth.currentUser == null)
             logout()
         else{
             auth.currentUser?.let{ user->
-                binding.textViewUserName.text = user.displayName
+                if(user.displayName.toString().isEmpty())
+                {
+                    binding.nameEditText.visibility = View.VISIBLE
+                    binding.buttonAddName.visibility = View.VISIBLE
+                }
+                else {
+                    binding.textViewUserName.text = user.displayName
+                }
+
                 binding.textViewEmailID.text = user.email
+
                 binding.userProfileDetails.text = "User Details"
             }
         }
@@ -38,8 +53,26 @@ class UserProfileActivity : AppCompatActivity() {
             logout()
         }
 
+        binding.buttonAddName.setOnClickListener {
+            var userName = binding.nameEditText.text.toString()
+            if (userName.isNotEmpty()){
+                updateName(userName)
+            }
+        }
 
         setSupportActionBar(binding.mainToolBar.toolbar)
+    }
+
+    private fun updateName(userName: String) {
+        val profileUpdates = UserProfileChangeRequest.Builder().setDisplayName(userName).build()
+
+        auth.currentUser!!.updateProfile(profileUpdates)
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    Log.i(TAG, "User profile updated.")
+                }
+            }
+
     }
 
     //     Adding the main_menu to the toolbar

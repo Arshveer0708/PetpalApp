@@ -100,7 +100,7 @@ class EnterUserCredentialsActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     Log.i("DB_Response", "$email - signInWithEmail:success")
-                    startActivity(Intent(this, GridRecyclerActivity::class.java))
+                    startActivity(Intent(this, UserProfileActivity::class.java))
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.i("DB_Response", "$email - signInWithEmail:failure", task.exception)
