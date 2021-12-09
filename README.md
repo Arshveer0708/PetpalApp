@@ -16,18 +16,31 @@ Technologies to be implemented ->
 - Firebase for authentication and database controls
 - Framer website (https://framer.com/projects/pra2HkOVh0Z2mMa6kWbi-ail4W?node=SeOBazzkX-page) for creating the wireframe or mockup for the application.
 
-Updation after Assignment 2-
+----------------------------------------------------------------------------------------------------------------------------------
+# Updation after Assignment 2-
 - Added launcher icon 
 - Completed the design and functionality for app based on the initial plan submitted in Assignment 1
-- Updated the screens
-- Added logo 
-- Updated UserProfileActivity.kt file to add profile page and logout button in user profile page
+- Updated the screens with background color
+- Added styling to Nav bar and added a menu and toolbar icons that direct to add new pet page, pet list screen and user profile screen.
+- Added UserProfileActivity.kt file to add profile page and logout button in user profile page
 - Deployed the app to the Google Play Store
 •	Generated a content rating
 •	Provided screenshots and description to the Play Store
-•	Published your app so it can be downloaded
+•	Published the app so it can be downloaded
+(App is under review)
+- Added logo to landing screen and with Firebase UI provided the ability to add new user
+
+----------------------------------------------------------------------------------------------------------------------------------
+# Screenshots -
 
 
+![icon](https://user-images.githubusercontent.com/64243859/145337983-4f6d92a7-73da-43ab-8775-b91672338081.png)
+![p1 - Copy](https://user-images.githubusercontent.com/64243859/145337764-6a8f625f-c0f3-4cff-855b-a52dc0691961.png)
+![p2](https://user-images.githubusercontent.com/64243859/145337773-df0943c2-1a0f-4b3e-a70f-bf901ab1c557.png)
+![p3 - Copy](https://user-images.githubusercontent.com/64243859/145337780-e28bc824-9f27-490c-8387-78c20ac828c1.png)
+![p4 - Copy](https://user-images.githubusercontent.com/64243859/145337791-6e88ce07-a4db-4144-8489-fd22e43e3d33.png)
+
+----------------------------------------------------------------------------------------------------------------------------------
 Wireframe - 
 
 
