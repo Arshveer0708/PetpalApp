@@ -25,13 +25,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="72dp"
-        android:layout_height="75dp"
+        android:layout_width="88dp"
+        android:layout_height="81dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/animal"
-        tools:layout_editor_absoluteX="45dp" />
+        app:srcCompat="@android:drawable/sym_def_app_icon"
+        tools:layout_editor_absoluteX="29dp" />
 
     <TextView
         android:id="@+id/textAge"
