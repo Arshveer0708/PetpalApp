@@ -16,7 +16,17 @@ Technologies to be implemented ->
 - Firebase for authentication and database controls
 - Framer website (https://framer.com/projects/pra2HkOVh0Z2mMa6kWbi-ail4W?node=SeOBazzkX-page) for creating the wireframe or mockup for the application.
 
+
 ----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+# Link To My App - (Currently in review)
+
+https://play.google.com/store/apps/details?id=com.GC200451204.petpal
+----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+
 # Updation after Assignment 2-
 - Added launcher icon 
 - Completed the design and functionality for app based on the initial plan submitted in Assignment 1
@@ -31,7 +41,7 @@ Technologies to be implemented ->
 - Added logo to landing screen and with Firebase UI provided the ability to add new user
 
 ----------------------------------------------------------------------------------------------------------------------------------
-# Screenshots -
+# Screenshots of my final app -
 
 
 ![icon](https://user-images.githubusercontent.com/64243859/145337983-4f6d92a7-73da-43ab-8775-b91672338081.png)
